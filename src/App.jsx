@@ -488,6 +488,12 @@ function App() {
                 </div>
                 <div className="flex items-center gap-4 group">
                   <div className="w-10 h-10 rounded-full bg-primary-fixed/30 dark:bg-slate-800 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+                    <span className="material-symbols-outlined text-[20px]">call</span>
+                  </div>
+                  <a className="text-on-surface-variant dark:text-slate-300 hover:text-primary transition-colors font-body-md" href="tel:+256756339110">+256 756 339 110</a>
+                </div>
+                <div className="flex items-center gap-4 group">
+                  <div className="w-10 h-10 rounded-full bg-primary-fixed/30 dark:bg-slate-800 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
                     <span className="material-symbols-outlined text-[20px]">link</span>
                   </div>
                   <a className="text-on-surface-variant dark:text-slate-300 hover:text-primary transition-colors font-body-md" href="https://www.linkedin.com/in/grace-nakiyemba" target="_blank" rel="noopener noreferrer">LinkedIn</a>
