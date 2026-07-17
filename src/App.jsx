@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
 import profilePhoto from './assets/Grace.jpeg';
+import amaniCareImg from './assets/AmaniCare.png';
+import farm2PlateImg from './assets/Farm2Plate.png';
+import graceTechImg from './assets/GraceTech.png';
+import nyondoImg from './assets/Nyondo.png';
+import videxImg from './assets/videx.png';
 
 const phrases = ["Software Engineer", "AI Builder", "Women in STEM Advocate"];
 
@@ -126,7 +131,7 @@ function App() {
       tags: ['AI', 'USSD/SMS', "Women's Health"],
       link: 'https://amanicare-every-woman.lovable.app',
       linkLabel: 'View Project',
-      screenshotNote: 'Add Amani Care screenshot here',
+      image: amaniCareImg,
     },
     {
       name: 'Nyondo Hardware Management System',
@@ -136,7 +141,7 @@ function App() {
       link: 'https://nyondo-hardware-management-system.onrender.com/',
       linkLabel: 'View Project',
       githubLink: 'https://github.com/Grace256c/nyondo-hardware-management-system',
-      screenshotNote: 'Add Nyondo Hardware screenshot here',
+      image: nyondoImg,
     },
     {
       name: 'Farm2Plate Connect',
@@ -145,7 +150,7 @@ function App() {
       tags: ['SMS Platform', 'Mobile', 'Food Security'],
       link: 'https://farmplate.netlify.app/',
       linkLabel: 'View Project',
-      screenshotNote: 'Add Farm2Plate screenshot here',
+      image: farm2PlateImg,
     },
     {
       name: 'Videx',
@@ -154,7 +159,7 @@ function App() {
       tags: ['Django', 'Tailwind CSS', 'Video Streaming'],
       githubLink: 'https://github.com/Grace256c/CSE-26-03-ST-ASSESSMENT',
       linkLabel: 'GitHub Repository',
-      screenshotNote: 'Add Videx screenshot here',
+      image: videxImg,
     },
     {
       name: 'GraceTech Solutions',
@@ -163,7 +168,7 @@ function App() {
       tags: ['Personal Brand', 'Full-Stack'],
       link: 'https://gracetechsolutions.netlify.app/',
       linkLabel: 'View Project',
-      screenshotNote: 'Add GraceTech Solutions screenshot here',
+      image: graceTechImg,
     },
   ];
 
@@ -359,17 +364,14 @@ function App() {
                   key={project.name}
                   className="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant/30 dark:border-slate-700 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col"
                 >
-                  {/*
-                    TO ADD A REAL SCREENSHOT:
-                    1. Drop the image file into src/assets/ (e.g. src/assets/amanicare.png)
-                    2. Add an import at the top of this file:
-                       import amaniCareImg from './assets/amanicare.png';
-                    3. Replace the placeholder div below with:
-                       <img src={amaniCareImg} alt={project.name} className="w-full h-full object-cover" />
-                  */}
-                  <div className="aspect-video w-full overflow-hidden bg-primary-fixed/20 dark:bg-slate-700 flex items-center justify-center text-on-surface-variant dark:text-slate-400 text-sm text-center px-4">
-                    📸 {project.screenshotNote}
+                  <div className="w-full h-48 overflow-hidden bg-primary-fixed/20 dark:bg-slate-700">
+                    <img
+                      src={project.image}
+                      alt={project.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
+
                   <div className="p-6 flex flex-col flex-grow space-y-4">
                     <div className="space-y-2">
                       <div className="flex items-center gap-2">
