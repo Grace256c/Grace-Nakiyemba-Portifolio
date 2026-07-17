@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.dot-grid {
+  background-image: radial-gradient(circle, #8B5CF6 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.1;
+}
+
+.dark .dot-grid {
+  opacity: 0.06;
+}

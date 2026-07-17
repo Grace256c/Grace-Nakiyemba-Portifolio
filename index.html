@@ -1,239 +1,129 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Grace Nakiyemba — Software Developer</title>
-	<meta name="description" content="Portfolio of Grace Nakiyemba — Software Developer, Tech Enthusiast, Community Builder.">
-	<!-- Fonts and icons -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-	<!-- Styles -->
-	<link rel="stylesheet" href="styles.css">
-	<!-- Early theme application to avoid flash -->
-	<script>
-		(function(){
-			try{
-				const saved = localStorage.getItem('theme'); // 'light' | 'dark' | null
-				if(saved === 'light' || saved === 'dark'){
-					document.documentElement.setAttribute('data-theme', saved);
-				}
-			}catch(e){}
-		})();
-	</script>
-</head>
-<body>
-	<canvas id="bgStars" aria-hidden="true"></canvas>
-	<canvas id="bgSnow" aria-hidden="true"></canvas>
-	<div class="overlay-grad" aria-hidden="true"></div>
-
-	<header>
-		<div class="container nav">
-			<div class="brand">Grace <span>Nakiyemba</span></div>
-			<nav aria-label="Primary">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<button class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
-					<i class="fa-solid fa-sun"></i>
-				</button>
-			</nav>
-		</div>
-	</header>
-
-	<main id="home" class="hero">
-		<div class="container grid">
-			<div>
-				<div class="kicker">Software Developer • Tech Enthusiast • Community Builder</div>
-				<h1 class="title">
-					<span class="name">Hi, I'm <span class="accent">Grace</span></span><br>
-					<span class="surname">Nakiyemba</span>
-				</h1>
-				<p class="tagline">A passionate woman in tech building solutions that matter.</p>
-				<p class="roles" aria-live="polite">
-					<span id="roleTyper">Software Developer</span><span class="cursor"></span>
-				</p>
-				<div class="hero-cta">
-					<a href="#projects" class="btn btn-primary">See My Work</a>
-					<a href="#contact" class="btn">Let’s Connect</a>
-				</div>
-				<div class="hero-cta" style="margin-top:14px">
-					<div class="socials" aria-label="Social media">
-						<!-- Replace with your actual profile URLs -->
-						<a href="https://github.com/Grace256c" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-						<a href="https://www.linkedin.com/in/grace-1520a9264" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-						<a href="https://x.com/gospelgrace3" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
-						<a href="https://instagram.com/gospelgrace256?igsh=MWoJrdjlmdXVtZg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="hero-photo reveal">
-				<img src="IMG-20221220-WA0014.jpg" alt="Professional headshot of Grace Nakiyemba">
-			</div>
-		</div>
-	</main>
-
-	<section id="about">
-		<div class="container grid-2">
-			<div>
-				<h2 class="section-title">About Me</h2>
-				<p class="section-sub">Who I am and what I care about</p>
-				<div class="card reveal">
-					<p>I’m <strong>Grace Nakiyemba</strong> — a software developer and community builder using technology to empower people and solve real problems. I care deeply about building tools that are accessible, scalable, and genuinely useful in everyday life.</p>
-					<p>I enjoy turning ideas into reliable software, collaborating with others to ship impact, and sharing knowledge through mentorship and community work. Whether I’m prototyping a web experience, improving a product, or organizing a local tech initiative, the goal is the same: create meaningful solutions that uplift communities.</p>
-				</div>
-			</div>
-			<div class="card reveal">
-				<ul class="about-list">
-					<li>Location: Kampala, Uganda</li>
-					<li>Focus: Web apps, community-driven projects, mentorship</li>
-					<li>Interests: UX, inclusive design, open-source, education</li>
-					<li>Email: <a href="nakiyembagrace256@gmail.com">nakiyembagrace256@gmail.com</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<section id="projects">
-		<div class="container">
-			<h2 class="section-title">Projects</h2>
-			<p class="section-sub">Real-world work that solves real problems</p>
-			<div class="projects">
-				<article class="card project reveal">
-					<h3>Community Health Finder</h3>
-					<p>A mobile-first web app that helps communities discover nearby clinics and health resources with offline access.</p>
-					<div class="stack">Tech: React, Node.js, IndexedDB, Mapbox</div>
-					<div class="proj-ctas">
-						<a class="btn btn-primary cta" href="#" target="_blank" rel="noopener">Live Demo</a>
-						<a class="btn cta" href="#" target="_blank" rel="noopener">GitHub</a>
-					</div>
-				</article>
-
-				<article class="card project reveal">
-					<h3>SkillsUp Mentorship</h3>
-					<p>A mentorship matching platform connecting learners with local tech mentors and tracking progress.</p>
-					<div class="stack">Tech: Next.js, Supabase, Tailwind</div>
-					<div class="proj-ctas">
-						<a class="btn btn-primary cta" href="#" target="_blank" rel="noopener">Live Demo</a>
-						<a class="btn cta" href="#" target="_blank" rel="noopener">GitHub</a>
-					</div>
-				</article>
-
-				<article class="card project reveal">
-					<h3>MarketLink</h3>
-					<p>Lightweight e-commerce starter for local vendors with mobile money integrations and simple inventory.</p>
-					<div class="stack">Tech: SvelteKit, Node.js, MongoDB</div>
-					<div class="proj-ctas">
-						<a class="btn btn-primary cta" href="#" target="_blank" rel="noopener">Live Demo</a>
-						<a class="btn cta" href="#" target="_blank" rel="noopener">GitHub</a>
-					</div>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<section id="skills">
-		<div class="container grid-2">
-			<div>
-				<h2 class="section-title">Skills</h2>
-				<p class="section-sub">Tools I use to build</p>
-				<div class="card reveal">
-					<div class="skill">
-						<div class="label"><span>HTML</span><span>90%</span></div>
-						<div class="bar"><div class="fill" data-pct="90"></div></div>
-					</div>
-					<div class="skill">
-						<div class="label"><span>CSS</span><span>85%</span></div>
-						<div class="bar"><div class="fill" data-pct="85"></div></div>
-					</div>
-					<div class="skill">
-						<div class="label"><span>Figma</span><span>95%</span></div>
-						<div class="bar"><div class="fill" data-pct="95"></div></div>
-					</div>
-					<div class="skill">
-						<div class="label"><span>Node.js</span><span>70%</span></div>
-						<div class="bar"><div class="fill" data-pct="70"></div></div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<h2 class="section-title">Experience & Achievements</h2>
-				<div class="card reveal">
-					<div class="exp">
-						<div class="exp-item">
-							<div><span class="where">Local Hackathon</span> — Winner, Social Impact Track</div>
-							<div class="when">2025</div>
-						</div>
-						<div class="exp-item">
-							<div><span class="where">Community Tech Bootcamp</span> — Mentor</div>
-							<div class="when">2024–Present</div>
-						</div>
-						<div class="exp-item">
-							<div><span class="where">Open Source</span> — Contributor, documentation and UI fixes</div>
-							<div class="when">Ongoing</div>
-						</div>
-					</div>
-					<p class="note"></p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="contact">
-		<div class="container contact">
-			<div>
-				<h2 class="section-title">Let’s collaborate</h2>
-				<p class="section-sub">Build something meaningful together</p>
-				<div class="card reveal">
-					<form action="https://formspree.io/f/your-form-id" method="POST">
-						<div class="form-grid">
-							<label>
-								<span>Name</span>
-								<input type="text" name="name" placeholder="Your name" required>
-							</label>
-							<label>
-								<span>Email</span>
-								<input type="email" name="email" placeholder="you@example.com" required>
-							</label>
-							<label>
-								<span>Message</span>
-								<textarea name="message" placeholder="Tell me about your project..." required></textarea>
-							</label>
-							<button class="btn btn-primary" type="submit">Send Message</button>
-						</div>
-					</form>
-					<p class="note">Or email me at <a href="nakiyembagrace256@gmail.com">nakiyembagrace256@gmail.com</a></p>
-					<div class="socials">
-						<a href="https://github.com/your-github" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-						<a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-						<a href="https://twitter.com/your-twitter" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
-						<a href="https://instagram.com/your-instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="card reveal">
-				<h3 style="margin-top:0">What I’m open to</h3>
-				<ul class="about-list">
-					<li>Freelance web development</li>
-					<li>Community partnerships and workshops</li>
-					<li>Mentorship and speaking</li>
-					<li>Open-source collaboration</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">© <span id="year"></span> Grace Nakiyemba. All rights reserved.</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="script.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Nakiyemba | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#eaedff",
+              "on-background": "#131b2e",
+              "tertiary-fixed-dim": "#fabc4e",
+              "tertiary-container": "#9b6b00",
+              "surface-variant": "#dae2fd",
+              "error-container": "#ffdad6",
+              "surface-tint": "#8B5CF6",
+              "primary": "#8B5CF6",
+              "tertiary": "#7b5500",
+              "secondary-fixed-dim": "#ffb0cd",
+              "surface-dim": "#d2d9f4",
+              "on-surface": "#131b2e",
+              "on-surface-variant": "#4d4354",
+              "inverse-on-surface": "#eef0ff",
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#fffbff",
+              "outline": "#7e7385",
+              "primary-fixed": "#ede9fe",
+              "secondary": "#b4136d",
+              "on-tertiary-fixed-variant": "#604100",
+              "on-error-container": "#93000a",
+              "outline-variant": "#cfc2d6",
+              "on-tertiary-fixed": "#281900",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed": "#3e0022",
+              "surface-container-low": "#f2f3ff",
+              "surface-container-high": "#e2e7ff",
+              "surface": "#faf8ff",
+              "secondary-fixed": "#ffd9e4",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-container-highest": "#dae2fd",
+              "surface-container-lowest": "#ffffff",
+              "background": "#faf8ff",
+              "on-secondary": "#ffffff",
+              "inverse-primary": "#c4b5fd",
+              "on-primary-fixed-variant": "#5b21b6",
+              "primary-container": "#a78bfa",
+              "on-secondary-container": "#600037",
+              "on-primary-container": "#fffbff",
+              "primary-fixed-dim": "#c4b5fd",
+              "on-secondary-fixed-variant": "#8c0053",
+              "surface-bright": "#faf8ff",
+              "on-primary-fixed": "#2e1065",
+              "tertiary-fixed": "#ffdead",
+              "secondary-container": "#fd56a7",
+              "inverse-surface": "#283044"
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px"
+            },
+            spacing: {
+              "margin-mobile": "16px",
+              "container-max": "1200px",
+              "gutter": "24px",
+              "unit": "8px",
+              "margin-desktop": "48px"
+            },
+            fontFamily: {
+              "code-sm": ["JetBrains Mono"],
+              "body-md": ["Inter"],
+              "headline-lg": ["Inter"],
+              "display": ["Inter"],
+              "label-md": ["JetBrains Mono"],
+              "body-lg": ["Inter"],
+              "headline-lg-mobile": ["Inter"]
+            },
+            fontSize: {
+              "code-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }],
+              "display": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "800" }],
+              "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "500" }],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }]
+            },
+            animation: {
+              blink: "blink 1s step-end infinite",
+              drift: "drift 60s linear infinite",
+              "slide-in-left": "slideInLeft 0.8s ease-out forwards",
+              "slide-in-right": "slideInRight 0.8s ease-out forwards"
+            },
+            keyframes: {
+              blink: {
+                "from, to": { "border-color": "transparent" },
+                "50%": { "border-color": "currentColor" }
+              },
+              slideInLeft: {
+                from: { opacity: "0", transform: "translateX(-40px)" },
+                to: { opacity: "1", transform: "translateX(0)" }
+              },
+              slideInRight: {
+                from: { opacity: "0", transform: "translateX(40px)" },
+                to: { opacity: "1", transform: "translateX(0)" }
+              },
+              drift: {
+                from: { "background-position": "0 0" },
+                to: { "background-position": "100px 100px" }
+              }
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-background dark:bg-slate-950 text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden relative transition-colors">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
