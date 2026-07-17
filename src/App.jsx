@@ -147,7 +147,7 @@ function App() {
       linkLabel: 'View Project',
       screenshotNote: 'Add Farm2Plate screenshot here',
     },
-   {
+    {
       name: 'Videx',
       description:
         'A video streaming platform where users can upload, manage, and play their own videos — with quality selection (360p, 720p, 1080p), custom thumbnails, and a validated upload form.',
@@ -203,10 +203,14 @@ function App() {
                 {darkMode ? 'light_mode' : 'dark_mode'}
               </span>
             </button>
-
-            <button className="hidden sm:block bg-primary-fixed hover:bg-primary-fixed/50 text-primary px-6 py-2 rounded-full font-label-md text-label-md transition-all active:scale-95 border border-primary/20">
+            <a
+              href="/Grace_Nakiyemba_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:block bg-primary-fixed hover:bg-primary-fixed/50 text-primary px-6 py-2 rounded-full font-label-md text-label-md transition-all active:scale-95 border border-primary/20"
+            >
               Resume
-            </button>
+            </a>
 
             <button
               className="md:hidden text-on-surface dark:text-slate-100"
@@ -221,7 +225,7 @@ function App() {
         {menuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-surface dark:bg-slate-900 flex flex-col gap-4 p-6 shadow-lg">
             {navLinks.map((link) => (
-             <a
+              <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
@@ -230,12 +234,17 @@ function App() {
                 {link.label}
               </a>
             ))}
-            <button className="bg-primary-fixed text-primary px-6 py-2 rounded-full font-label-md text-label-md w-full mt-2">
-              Resume
-            </button>
-          </div>
-        )}
-      </nav>
+            <a
+            href="/Grace_Nakiyemba_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary-fixed text-primary px-6 py-2 rounded-full font-label-md text-label-md w-full mt-2 block text-center"
+          >
+            Resume
+          </a>
+        </div>
+      )}
+    </nav >
 
       <main className="relative min-h-screen flex flex-col pt-24 bg-background dark:bg-slate-950 transition-colors">
         <div className="fixed top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary-fixed rounded-full opacity-40 dark:opacity-10 blur-3xl z-[-1]"></div>
@@ -542,39 +551,39 @@ function App() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-surface/80 dark:bg-slate-900 backdrop-blur-md border-t border-outline-variant/30 dark:border-slate-700 relative z-10">
-        <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-[80px]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-            <div className="space-y-6">
-              <div className="font-headline-lg text-headline-lg font-bold text-primary">GN</div>
-              <p className="font-code-sm text-code-sm text-on-surface-variant dark:text-slate-400 max-w-xs">
-                © {currentYear} Grace Nakiyemba. Built with precision and an elegant touch.
-              </p>
-              <div className="flex gap-4">
-                <a className="text-on-surface-variant dark:text-slate-300 hover:text-primary transition-colors font-label-md text-label-md hover:-translate-y-1 transition-transform" href="https://www.linkedin.com/in/grace-nakiyemba" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a className="text-on-surface-variant dark:text-slate-300 hover:text-primary transition-colors font-label-md text-label-md hover:-translate-y-1 transition-transform" href="https://github.com/Grace256c" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a className="text-on-surface-variant dark:text-slate-300 hover:text-primary transition-colors font-label-md text-label-md hover:-translate-y-1 transition-transform" href="mailto:gracenakiyemba256@gmail.com">Email</a>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="font-bold text-on-surface dark:text-slate-100 font-label-md uppercase tracking-wider">Location</div>
-              <div className="flex items-center gap-2 text-on-surface-variant dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">location_on</span>
-                <span className="text-body-md">Kampala, Uganda</span>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="font-bold text-on-surface dark:text-slate-100 font-label-md uppercase tracking-wider">Affiliations</div>
-              <ul className="space-y-2 text-on-surface-variant dark:text-slate-300 text-body-md">
-                <li className="hover:text-primary transition-colors cursor-default">Groundbreaker Talents</li>
-                <li className="hover:text-primary transition-colors cursor-default">Refactory Academy</li>
-                <li className="hover:text-primary transition-colors cursor-default">Turing College</li>
-              </ul>
-            </div>
+  {/* Footer */ }
+  <footer className="bg-surface/80 dark:bg-slate-900 backdrop-blur-md border-t border-outline-variant/30 dark:border-slate-700 relative z-10">
+    <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-[80px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+        <div className="space-y-6">
+          <div className="font-headline-lg text-headline-lg font-bold text-primary">GN</div>
+          <p className="font-code-sm text-code-sm text-on-surface-variant dark:text-slate-400 max-w-xs">
+            © {currentYear} Grace Nakiyemba. Built with precision and an elegant touch.
+          </p>
+          <div className="flex gap-4">
+            <a className="text-on-surface-variant dark:text-slate-300 hover:text-primary transition-colors font-label-md text-label-md hover:-translate-y-1 transition-transform" href="https://www.linkedin.com/in/grace-nakiyemba" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a className="text-on-surface-variant dark:text-slate-300 hover:text-primary transition-colors font-label-md text-label-md hover:-translate-y-1 transition-transform" href="https://github.com/Grace256c" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a className="text-on-surface-variant dark:text-slate-300 hover:text-primary transition-colors font-label-md text-label-md hover:-translate-y-1 transition-transform" href="mailto:gracenakiyemba256@gmail.com">Email</a>
           </div>
         </div>
-      </footer>
+        <div className="space-y-4">
+          <div className="font-bold text-on-surface dark:text-slate-100 font-label-md uppercase tracking-wider">Location</div>
+          <div className="flex items-center gap-2 text-on-surface-variant dark:text-slate-300">
+            <span className="material-symbols-outlined text-primary text-[20px]">location_on</span>
+            <span className="text-body-md">Kampala, Uganda</span>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="font-bold text-on-surface dark:text-slate-100 font-label-md uppercase tracking-wider">Affiliations</div>
+          <ul className="space-y-2 text-on-surface-variant dark:text-slate-300 text-body-md">
+            <li className="hover:text-primary transition-colors cursor-default">Groundbreaker Talents</li>
+            <li className="hover:text-primary transition-colors cursor-default">Refactory Academy</li>
+            <li className="hover:text-primary transition-colors cursor-default">Turing College</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
     </>
   );
 }
