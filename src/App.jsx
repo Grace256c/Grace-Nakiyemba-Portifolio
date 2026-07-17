@@ -59,7 +59,7 @@ function App() {
     const data = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/mqerpbjw', {
         method: 'POST',
         body: data,
         headers: { Accept: 'application/json' },
@@ -147,7 +147,7 @@ function App() {
       linkLabel: 'View Project',
       screenshotNote: 'Add Farm2Plate screenshot here',
     },
-    {
+   {
       name: 'Videx',
       description:
         'A video streaming platform where users can upload, manage, and play their own videos — with quality selection (360p, 720p, 1080p), custom thumbnails, and a validated upload form.',
@@ -221,7 +221,7 @@ function App() {
         {menuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-surface dark:bg-slate-900 flex flex-col gap-4 p-6 shadow-lg">
             {navLinks.map((link) => (
-              <a
+             <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
@@ -237,7 +237,7 @@ function App() {
         )}
       </nav>
 
-      <main className="relative min-h-screen flex flex-col pt-24 dark:bg-slate-950 transition-colors">
+      <main className="relative min-h-screen flex flex-col pt-24 bg-background dark:bg-slate-950 transition-colors">
         <div className="fixed top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary-fixed rounded-full opacity-40 dark:opacity-10 blur-3xl z-[-1]"></div>
 
         {/* Hero Section */}
