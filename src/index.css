@@ -95,3 +95,17 @@
 .dark .dot-grid {
   opacity: 0.06;
 }
+/* Subtle one-time reveals. Content remains visible without JavaScript. */
+@media (prefers-reduced-motion: no-preference) {
+  .portfolio-reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .portfolio-reveal-visible {
+    animation: portfolio-reveal-in 600ms cubic-bezier(.2,.8,.2,1) both;
+  }
+  @keyframes portfolio-reveal-in {
+    from { opacity: .35; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
