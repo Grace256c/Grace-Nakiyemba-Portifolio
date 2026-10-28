@@ -106,6 +106,7 @@ function App() {
     { title: 'AI & Data', skills: ['AI Integrations', 'Machine Learning Fundamentals', 'Data Analytics'] },
     { title: 'Tools & Integrations', skills: ['Git', 'GitHub', 'Linux', "Africa’s Talking APIs", 'SMS / USSD'] },
     { title: 'Administrative & Operations', skills: ['Virtual Assistance', 'Data Entry', 'Documentation', 'Microsoft Office', 'Email & Calendar Management', 'Customer Support', 'Writing & Editing'] },
+    { title: 'Digital Communication & Community Engagement', skills: ['Professional Content Writing', 'Content Planning & Research', 'Community Engagement', 'Stakeholder Communication', 'Event Coordination', 'Workshop Facilitation', 'Digital Analytics Fundamentals', 'AI Assisted Content Workflows'] },
     { title: 'Currently Exploring', skills: ['Ethereum', 'Blockchain & Web3', 'IoT', 'Embedded Systems', 'C++', 'Cloud & Security'] },
   ];
 
@@ -337,9 +338,10 @@ function App() {
               About Me
             </h2>
             <div className="space-y-6 text-body-lg text-on-surface-variant dark:text-slate-300 leading-relaxed">
-              <p>My path into tech wasn't a straight line. it was built one skill at a time, through Groundbreaker, Refactory, and Turing College. Each step took me deeper, from the fundamentals of programming to building real, working software.</p>
-              <p>Today I work with Python, Django, React JS, and AI to build systems that solve real problems. from hackathon winning AI solutions to production systems for real clients. I care less about the tech itself and more about who it reaches. As a woman in STEM based in Kampala, Uganda, I'm also committed to making sure the path that opened for me stays open for the next person coming up behind me.</p>
+              <p>My path into tech wasn't a straight line. It was built one skill at a time, through Groundbreaker, Refactory, and Turing College. Each step took me deeper, from the fundamentals of programming to building real, working software.</p>
+              <p>Today I work with Python, Django, React JS, and AI to build systems that solve real problems, from hackathon projects to applications designed for practical use. I care less about the tech itself and more about who it reaches. As a woman in STEM based in Kampala, Uganda, I'm also committed to making sure the path that opened for me stays open for the next person coming up behind me.</p>
               <p>I contribute to open source software, including work on Open Data Ensemble (ODE), and am exploring opportunities to collaborate with other projects. I'm also expanding my knowledge of Ethereum, blockchain, Web3, IoT and embedded systems. I value clear documentation, thoughtful collaboration, and building technology people can actually use.</p>
+              <p>Alongside engineering, I have facilitated technology learning sessions, coordinated collaborative activities, and supported community engagement. These experiences strengthen my professional writing, content planning, stakeholder communication, and ability to help teams share ideas clearly. I enjoy bringing technical understanding and thoughtful communication together.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
               <div className="bg-primary-fixed/40 dark:bg-slate-800 border border-primary/10 dark:border-slate-700 p-6 rounded-2xl flex flex-col items-center text-center">
